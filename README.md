@@ -1,4 +1,4 @@
-Web Development Task 2
+Web-development-task-2
 
 Description:
 Improve previous web pages with CSS
