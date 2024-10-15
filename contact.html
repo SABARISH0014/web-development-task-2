@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            margin: 0;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 600px; /* Limit the width of the main content */
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center; /* Center the heading */
+            color: #35424a; /* Dark color for the heading */
+            font-size: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; /* Arranges form elements in a column */
+        }
+
+        form label {
+            font-size: 25px; /* Size of label text */
+            margin-top: 10px; /* Space above each label */
+            font-weight: bold; /* Bold font for labels */
+            color: #333; /* Dark color for labels */
+        }
+
+        form input, form textarea {
+            padding: 10px; /* Inner padding for inputs and textareas */
+            margin-top: 5px; /* Space above each input and textarea */
+            border: 2px solid #ffffff; /* Blue border for inputs and textareas */
+            border-radius: 4px; /* Rounded corners */
+            font-size: 20px; /* Font size for input text */
+            transition: border-color 0.3s ease; /* Smooth transition for border color */
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #000000; /* Darker blue border on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        form button {
+            margin-top: 10px; /* Space above button */
+            padding: 10px; /* Inner padding for button */
+            background: #35424a; /* Blue background for button */
+            color: #ffffff; /* White text for button */
+            border: none; /* Remove default border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 20px; /* Font size for button text */
+            transition: background 0.3s ease; /* Smooth background transition */
+        }
+
+        form button:hover {
+            background: #3a3c3d; /* Darker blue on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px; /* Space above footer */
+            color: #777; /* Grey color for footer text */
+        }
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 30px; /* Adjust heading size for smaller screens */
+            }
+
+            form label {
+                font-size: 20px; /* Adjust label size for smaller screens */
+            }
+
+            form input, form textarea {
+                font-size: 18px; /* Adjust input size for smaller screens */
+            }
+
+            form button {
+                font-size: 18px; /* Adjust button size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;  2024 Test Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
